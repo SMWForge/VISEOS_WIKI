@@ -9,6 +9,7 @@
 | [`build_and_update.sh`](#build_and_updatesh) | `/root/aosp-tools/` | bauen, signieren, OTA erzeugen und veröffentlichen |
 | [`make-release-keys.sh`](#make-release-keyssh) | `/root/aosp-tools/` | Release-Schlüssel erzeugen |
 | [`viseupdate-server`](07-OTA-Updates.md#der-ota-server) | `/root/aosp-tools/viseupdate-server/` | Debian-Paket für den OTA-Server |
+| `lib/check_signed_tf.py` | `/root/aosp-tools/` | prüft signierte target_files an den echten Signaturen auf Testschlüssel (von `build_and_update.sh` genutzt) |
 | `prepare-blobs.sh`, `prepare-kernel.py` | `vendor/viseos/scripts/` | siehe [Blobs](04-Blobs.md), [Kernel](03-Geraet-tegu.md#kernel) |
 
 ## build.sh

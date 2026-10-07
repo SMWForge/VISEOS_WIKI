@@ -53,4 +53,6 @@ Kurzfassung von `vendor/viseos/NOTES.md`. Dort steht zu jeder Änderung Datei, I
   Beim Erproben gefunden und behoben:
   - Ohne `-o` behält `otacerts.zip` den testkey.
   - `META/apkcerts.txt` taugt nicht zur Prüfung. Geprüft wird jetzt an den echten Signaturen.
+  - Das Archiv unterscheidet Builds jetzt auch nach Schlüsseln. Vorher hätte eine testsignierte
+    Fassung als Basis für Deltas dienen können.
 - Dieses Wiki angelegt.

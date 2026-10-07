@@ -41,3 +41,16 @@ Erstes Zielgerät: **Google Pixel 9a (`tegu`)**, Produkt `viseos_tegu`.
 
 > Hinweis: Dieses Wiki enthält bewusst **keine** Schlüssel, Passwörter oder Upload-Keys. Die
 > Pfade (`/root/aosp`, `/root/aosp-tools`) beziehen sich auf den Build-Rechner.
+
+## Pflege
+
+Die Seiten werden im Repo [VISEOS_WIKI](https://github.com/SMWForge/VISEOS_WIKI) gepflegt.
+Das [GitHub-Wiki](https://github.com/SMWForge/VISEOS_WIKI/wiki) wird daraus erzeugt:
+
+```bash
+git clone git@github.com-smwforge:SMWForge/VISEOS_WIKI.wiki.git
+tools/build-github-wiki.py ../VISEOS_WIKI.wiki
+cd ../VISEOS_WIKI.wiki && git add -A && git commit -m "Wiki aktualisiert" && git push
+```
+
+Änderungen direkt im Wiki-Editor gehen beim nächsten Erzeugen verloren.

@@ -144,7 +144,7 @@ Update von ViseUpdate also das Paket neu bauen.
 | 5. OTA | `ota_from_target_files -k releasekey`: volles Paket, mit `--incremental` zusätzlich ein Delta zum zuletzt veröffentlichten Build (nur bei gleichen Schlüsseln) |
 | 6. Images (optional `--images`) | Fastboot-Paket für die Erstinstallation + `avb_pkmd.bin` + `FLASHEN.txt` in `release/<gerät>-<version>/` |
 | 7. Veröffentlichen | per SSH (`rsync --partial`, dann `viseupdate-publish`), lokal oder als Staging-Ordner |
-| 8. Archiv | signierte target_files nach `ota-archive/` (die letzten 3), Basis für das nächste Delta |
+| 8. Archiv | signierte target_files nach `ota-archive/` (die letzten 3, je Build und Schlüsselsatz). Basis für das nächste Delta, das nur auf einem Build mit **denselben Schlüsseln** aufbaut. |
 
 | Option | Bedeutung |
 |---|---|
